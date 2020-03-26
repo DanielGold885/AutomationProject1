@@ -1,0 +1,35 @@
+package WorkFlows;
+
+import Utilities.commonOps;
+import Wrappers.uiActions;
+
+public class webWorkFlows extends commonOps {
+
+    public static void login(String userName, String password){
+
+        uiActions.setText(grafanaLoginPage.grafanaUserName, userName);
+        uiActions.setText(grafanaLoginPage.grafanaPassword, password);
+        uiActions.click(grafanaLoginPage.loginButton);
+        uiActions.click(grafanaLoginPage.skipButton);
+    }
+
+    public static void goToServerAdminUsersPage(){
+        uiActions.hoverOnElement(grafanaLeftMenu.serverAdminButton);
+        uiActions.click(serverAdminMenu.usersButton);
+    }
+
+    public static void signOut(){
+        uiActions.hoverOnElement(grafanaLeftMenu.signOutAvatar);
+        uiActions.click(grafanaLeftMenu.signOutButton);
+    }
+
+    public static void createNewUser(String newUserName, String newUserEmail,
+                                     String newUserPassword, String newUserUsername){
+        uiActions.click(serverAdminPage.newUserBtn);
+        uiActions.setText(addNewUserTab.nameInput, newUserName);
+        uiActions.setText(addNewUserTab.emailInput, newUserEmail);
+        uiActions.setText(addNewUserTab.userNameInput, newUserUsername);
+        uiActions.setText(addNewUserTab.passwordInput, newUserPassword);
+        uiActions.click(addNewUserTab.createButton);
+    }
+}
