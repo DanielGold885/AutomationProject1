@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration>
+
+    <!-- initial capabilities -->
+    <platformName>web</platformName>
+    <browserName>chrome</browserName>
+
+    <!-- Timeouts -->
+    <defaultTimeout>10</defaultTimeout>
+
+    <!-- Base URL -->
+    <grafanaURL>http://localhost:3333</grafanaURL>
+
+    <!-- Grafana Test Data -->
+    <loginUserName>admin</loginUserName>
+    <loginPassword>admin</loginPassword>
+
+    <newUserName>Moshe</newUserName>
+    <userName>Moshe123</userName>
+    <userEmail>me@grafanatest.com</userEmail>
+    <userPassword>mySecretPassword123!</userPassword>
+
+</configuration>

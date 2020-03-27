@@ -6,11 +6,15 @@ import Wrappers.validations;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import org.xml.sax.SAXException;
+
+import javax.xml.parsers.ParserConfigurationException;
+import java.io.IOException;
 
 public class grafana extends commonOps {
     @BeforeMethod
-    public void login(){
-        webWorkFlows.login("admin", "admin");
+    public void login() throws IOException, SAXException, ParserConfigurationException {
+        webWorkFlows.login(getData("loginUserName"), getData("loginPassword"));
         validations.elementText(grafanaHomePage.pageHeadline, "Home Dashboard");
     }
 
@@ -34,11 +38,11 @@ public class grafana extends commonOps {
     }
 
     @Test
-    public void test_03createNewUserFromServerAdminPage() throws InterruptedException {
+    public void test_03createNewUserFromServerAdminPage() throws InterruptedException, IOException, SAXException,
+            ParserConfigurationException {
         webWorkFlows.goToServerAdminUsersPage();
-        webWorkFlows.createNewUser("Moshe", "me@test.io",
-                "myNewUserName", "passsowrd12345!");
-        Thread.sleep(4000);
+        webWorkFlows.createNewUser(getData("newUserName"), getData("userEmail"),
+                getData("userName"), getData("userPassword"));
         validations.countNumberOfElements(serverAdminPage.userListings, 2);
     }
 }
