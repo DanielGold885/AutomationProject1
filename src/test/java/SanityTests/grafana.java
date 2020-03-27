@@ -3,6 +3,7 @@ package SanityTests;
 import Utilities.commonOps;
 import WorkFlows.webWorkFlows;
 import Wrappers.validations;
+import io.qameta.allure.Description;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -19,25 +20,28 @@ public class grafana extends commonOps {
     }
 
     @AfterMethod
-    public void logOut(){
+    public void logout(){
         webWorkFlows.signOut();
         validations.elementText(grafanaLoginPage.loginButton, "Log In");
     }
 
-    @Test
+    @Test(description = "Validate default admin user")
+    @Description("Test description: Validate default admin user is present on the server admin screen")
     public void test_01validateDefaultUser() {
         webWorkFlows.goToServerAdminUsersPage();
         validations.elementText(serverAdminPage.serverAdminPageHeader, "Server Admin");
         validations.elementText(serverAdminPage.adminUserListing, "admin");
     }
 
-    @Test
+    @Test(description = "Validate single user listing")
+    @Description("Test description: Validate that only one user listing is present on the server admin screen")
     public void test_02validateSingleUserOnPage() {
         webWorkFlows.goToServerAdminUsersPage();
         validations.countNumberOfElements(serverAdminPage.userListings, 1);
     }
 
-    @Test
+    @Test(description = "Add a new user")
+    @Description("Test Description: Adding a new user from the server admin screen")
     public void test_03createNewUserFromServerAdminPage() throws InterruptedException, IOException, SAXException,
             ParserConfigurationException {
         webWorkFlows.goToServerAdminUsersPage();

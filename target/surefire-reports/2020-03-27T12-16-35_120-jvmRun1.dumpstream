@@ -1,3 +1,0 @@
-# Created at 2020-03-27T12:16:35.665
-Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'Error occurred during initialization of VM'.
-

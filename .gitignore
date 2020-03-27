@@ -3,3 +3,7 @@
 imageRepository
 
 # user-specific stuff
+
+# Post-build and runtime generated files
+target
+allure-results
