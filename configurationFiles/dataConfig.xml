@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <configuration>
 
-    <!-- initial capabilities -->
+    <!-- Initial run settings -->
     <platformName>web</platformName>
     <browserName>chrome</browserName>
 

@@ -2,19 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92a3bb6d-3dcc-4166-8ae1-686d909dd35d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configurationFiles/dataConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/commonOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/commonOps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configurationFiles/dataConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/configurationFiles/dataConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WorkFlows/webWorkFlows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WorkFlows/webWorkFlows.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Wrappers/uiActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Wrappers/uiActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Wrappers/validations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Wrappers/validations.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SanityTests/grafana.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SanityTests/grafana.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/commonOps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/commonOps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2020-03-27T12-11-27_943-jvmRun1.dumpstream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2020-03-27T12-11-27_943.dumpstream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2020-03-27T12-12-24_964-jvmRun1.dumpstream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2020-03-27T12-12-24_964.dumpstream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2020-03-27T12-15-28_333-jvmRun1.dumpstream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2020-03-27T12-15-28_333.dumpstream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2020-03-27T12-16-35_120-jvmRun1.dumpstream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2020-03-27T12-16-35_120.dumpstream" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/SanityTests/grafana.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SanityTests/grafana.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="AnnotationType" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -33,6 +56,11 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="WorkFlows" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="grafana" type="TestNG" temporary="true" nameIsGenerated="true">
@@ -92,21 +120,33 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="279" key="FileChooserDialogImpl/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1585227543344" />
-    <state width="1877" height="287" key="GridCell.Tab.0.bottom" timestamp="1585295387299">
+    <state width="1877" height="287" key="GridCell.Tab.0.bottom" timestamp="1585323714491">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="287" key="GridCell.Tab.0.bottom/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1585295387299" />
-    <state width="1877" height="287" key="GridCell.Tab.0.center" timestamp="1585295387299">
+    <state width="1877" height="287" key="GridCell.Tab.0.bottom/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1585323714491" />
+    <state width="1877" height="287" key="GridCell.Tab.0.center" timestamp="1585323714491">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="287" key="GridCell.Tab.0.center/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1585295387299" />
-    <state width="1877" height="287" key="GridCell.Tab.0.left" timestamp="1585295387299">
+    <state width="1877" height="287" key="GridCell.Tab.0.center/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1585323714491" />
+    <state width="1877" height="287" key="GridCell.Tab.0.left" timestamp="1585323714491">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="287" key="GridCell.Tab.0.left/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1585295387299" />
-    <state width="1877" height="287" key="GridCell.Tab.0.right" timestamp="1585295387299">
+    <state width="1877" height="287" key="GridCell.Tab.0.left/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1585323714491" />
+    <state width="1877" height="287" key="GridCell.Tab.0.right" timestamp="1585323714491">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="287" key="GridCell.Tab.0.right/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1585295387299" />
+    <state width="1877" height="287" key="GridCell.Tab.0.right/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1585323714491" />
+    <state x="490" y="179" key="Maven.ArtifactSearchDialog" timestamp="1585297483776">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="490" y="179" key="Maven.ArtifactSearchDialog/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1585297483776" />
+    <state x="668" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1585310567862">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="668" y="349" key="com.intellij.ide.util.TipDialog/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1585310567862" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1585322310929">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1585322310929" />
   </component>
 </project>

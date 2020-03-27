@@ -25,12 +25,12 @@ public class commonOps extends base{
 
     public static String getData (String nodeName) throws ParserConfigurationException,
             IOException, SAXException {
-        File fXmlFile = new File("./configurationFiles/dataConfig.xml");
-        DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
-        DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-        Document doc = dBuilder.parse(fXmlFile);
-        doc.getDocumentElement().normalize();
-        return doc.getElementsByTagName(nodeName).item(0).getTextContent();
+            File fXmlFile = new File("./configurationFiles/dataConfig.xml");
+            DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+            Document doc = dBuilder.parse(fXmlFile);
+            doc.getDocumentElement().normalize();
+            return doc.getElementsByTagName(nodeName).item(0).getTextContent();
     }
 
     public static void initBrowser(String browserType) throws ParserConfigurationException, IOException, SAXException {
