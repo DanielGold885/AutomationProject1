@@ -6,12 +6,15 @@ import Wrappers.validations;
 import io.qameta.allure.Description;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.xml.sax.SAXException;
 
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
 
+
+@Listeners(Utilities.listeners.class)
 public class grafana extends commonOps {
     @BeforeMethod
     public void login() throws IOException, SAXException, ParserConfigurationException {
