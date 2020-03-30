@@ -1,6 +1,8 @@
 # Use the latest image from UBUNTU installed in the machine
 FROM ubuntu:latest
 
+MAINTAINER corefinder@docker.com
+
 # Update ubuntu system
 RUN apt-get update
 
@@ -14,11 +16,12 @@ RUN apt-get install -y maven
 # Install git on ubuntu-selenium image
 RUN apt-get install -y git
 
-# Install chrome and chromedriver
-RUN apt-get blueimp/chromedriver
-
 # Get the repository onto the local system
 RUN git clone https://github.com/DanielGold885/AutomationProject.git
 
 # Run the maven command to execute all the tests
+WORKDIR "/AutomationProject"
 RUN mvn clean install test
+
+ENTRYPOINT ["/bin/bash"]
+
