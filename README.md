@@ -19,5 +19,5 @@
  Follow the installation instruction found in [this](https://docs.qameta.io/allure/) link.
  * To generate a run report open terminal -> 
  navigate to: {project level directory} -> 
- execute ```$allure serve ${directory name}```. i.e: ```$allure serve allure-results```
+ execute ```$ allure serve ${directory name}```. i.e: ```$allure serve allure-results```
  
