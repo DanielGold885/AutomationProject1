@@ -3,14 +3,17 @@ package Utilities;
 import PageObjects.Grafana.serverAdminPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.interactions.Actions;
 
 public class base {
 
-    protected static WebDriver driver;
+    public static WebDriver driver;
     public static Actions actions;
     public static WebDriverWait wait;
+    public static DesiredCapabilities desiredCapabilities;
+   // public static DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
 
     //TODO add implementation for chromeOptions or desired capabilities
 
