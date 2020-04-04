@@ -2,11 +2,13 @@
 <configuration>
 
     <!-- Initial run settings -->
-    <platformName>web</platformName>
+    <platformName>remote</platformName>
     <browserName>chrome</browserName>
 
     <!-- Timeouts -->
     <defaultTimeout>10</defaultTimeout>
+
+    <!-- Desired Capabilities -->
 
     <!-- Base URL -->
     <grafanaURL>http://localhost:3333</grafanaURL>
