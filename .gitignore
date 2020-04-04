@@ -7,3 +7,6 @@ imageRepository
 # Post-build and runtime generated files
 target
 allure-results
+
+# OS-specific stuff
+.DS_Store

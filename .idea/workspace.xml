@@ -39,6 +39,9 @@
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="Utilities" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="WorkFlows" />
     </key>
