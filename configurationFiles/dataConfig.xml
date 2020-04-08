@@ -2,7 +2,7 @@
 <configuration>
 
     <!-- Initial run settings -->
-    <platformName>remote</platformName>
+    <platformName>api</platformName>
     <browserName>chrome</browserName>
 
     <!-- Timeouts -->
@@ -11,7 +11,7 @@
     <!-- Desired Capabilities -->
 
     <!-- Base URL -->
-    <grafanaURL>http://localhost:3333</grafanaURL>
+    <URL>http://localhost:3333</URL>
 
     <!-- Grafana Test Data -->
     <loginUserName>admin</loginUserName>
@@ -21,5 +21,14 @@
     <userName>Moshe123</userName>
     <userEmail>me@grafanatest.com</userEmail>
     <userPassword>mySecretPassword123!</userPassword>
+
+    <!-- API testing -->
+    <apiURL>http://localhost:3333</apiURL>
+    <user>admin</user>
+    <password>admin</password>
+    <existingTeamName>ATeam</existingTeamName>
+    <newTeamName>newTeam</newTeamName>
+    <newTeamEmail>test123@test</newTeamEmail>
+
 
 </configuration>

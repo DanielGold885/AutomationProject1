@@ -1,6 +1,7 @@
 package Utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import io.restassured.RestAssured;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -26,6 +27,11 @@ import java.util.concurrent.TimeUnit;
 
 
 public class commonOps extends base{
+
+    String platform = getData("platformName");
+
+    public commonOps() throws IOException, SAXException, ParserConfigurationException {
+    }
 
     public static String getData (String nodeName) throws ParserConfigurationException,
             IOException, SAXException {
@@ -53,7 +59,7 @@ public class commonOps extends base{
             driver.manage().window().setSize(new Dimension(1024, 768));
             driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
             wait = new WebDriverWait(driver, Long.parseLong(getData("defaultTimeout")));
-            driver.get(getData("grafanaURL"));
+            driver.get(getData("URL"));
             driver.manage().timeouts().implicitlyWait(Long.parseLong(getData("defaultTimeout")),
                     TimeUnit.SECONDS);
             actions = new Actions(driver);
@@ -90,14 +96,22 @@ public class commonOps extends base{
         return desiredCapabilities;
     }
 
+    public static void initAPI() throws IOException, SAXException, ParserConfigurationException {
+        RestAssured.baseURI = getData("URL");
+        httpRequest = RestAssured.given().auth().preemptive().basic(getData("user"),
+                getData("password"));
+    }
+
     @BeforeClass
     public void startSession() throws
             IOException, ParserConfigurationException, SAXException, InterruptedException {
-        String platform = getData("platformName");
+
                 if(platform.equalsIgnoreCase("web"))
                     initBrowser(getData("browserName"));
                 else if(platform.equalsIgnoreCase("remote"))
                     initBrowser(getData("browserName"));
+                else if(platform.equalsIgnoreCase("api"))
+                    initAPI();
                 else
                     throw new RuntimeException("Invalid Platform name!");
                 managePages.initPageObjectElements();
@@ -105,6 +119,7 @@ public class commonOps extends base{
 
     @AfterClass
     public void cleanSession(){
-        driver.quit();
+        if(!platform.equalsIgnoreCase("api"))
+            driver.quit();
     }
 }

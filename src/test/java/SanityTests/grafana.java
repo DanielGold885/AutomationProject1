@@ -16,6 +16,9 @@ import java.io.IOException;
 
 @Listeners(Utilities.listeners.class)
 public class grafana extends commonOps {
+    public grafana() throws IOException, SAXException, ParserConfigurationException {
+    }
+
     @BeforeMethod
     public void login() throws IOException, SAXException, ParserConfigurationException {
         webWorkFlows.login(getData("loginUserName"), getData("loginPassword"));

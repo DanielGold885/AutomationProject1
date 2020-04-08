@@ -3,9 +3,16 @@ package WorkFlows;
 import Utilities.commonOps;
 import Wrappers.uiActions;
 import io.qameta.allure.Step;
+import org.xml.sax.SAXException;
+
+import javax.xml.parsers.ParserConfigurationException;
+import java.io.IOException;
 
 
 public class webWorkFlows extends commonOps {
+    public webWorkFlows() throws IOException, SAXException, ParserConfigurationException {
+    }
+
     @Step("Grafana Login flow")
     public static void login(String userName, String password){
         uiActions.setText(grafanaLoginPage.grafanaUserName, userName);

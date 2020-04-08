@@ -7,6 +7,8 @@ imageRepository
 # Post-build and runtime generated files
 target
 allure-results
+ajcore.*.txt
+**//ajcore.*.txt
 
 # OS-specific stuff
 .DS_Store

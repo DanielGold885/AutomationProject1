@@ -5,10 +5,16 @@ import io.qameta.allure.Step;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.xml.sax.SAXException;
 
 import javax.swing.text.Utilities;
+import javax.xml.parsers.ParserConfigurationException;
+import java.io.IOException;
 
 public class uiActions extends commonOps{
+
+    public uiActions() throws IOException, SAXException, ParserConfigurationException {
+    }
 
     @Step("Click")
     public static void click(WebElement element){
